@@ -1,0 +1,39 @@
+{
+  "compilerOptions": {
+    "module": "commonjs",
+    "target": "es5",
+    "lib": ["es5", "es6", "es7", "es2017", "dom"],
+    "sourceMap": true,
+    "allowJs": true,
+    "moduleResolution": "node",
+    "jsx": "react",
+    "rootDirs": ["src", "stories"],
+    "forceConsistentCasingInFileNames": true,
+    "noUnusedLocals": true,
+    "allowSyntheticDefaultImports": true,
+    "emitDecoratorMetadata": true,
+    "noImplicitAny": true,
+    "experimentalDecorators": true,
+    "baseUrl": "src",
+    "esModuleInterop": true,
+    "paths": {
+      "@actions": ["actions"],
+      "@components/*": ["components/*"],
+      "@config": ["config"],
+      "@types": ["types"],
+      "@jss": ["jss"],
+      "@utils": ["utils"],
+      "@store": ["store"],
+      "@reducers": ["reducers"],
+      "@routes": ["routes"]
+    }
+  },
+  "exclude": [
+    "node_modules",
+    "static",
+    "build",
+    "webpack.config.prod.js",
+    "webpack.config.js",
+    "switch_project.js"
+  ]
+}
