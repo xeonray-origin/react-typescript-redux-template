@@ -3,7 +3,7 @@ import { Theme } from '@material-ui/core';
 export const pageStyles = (theme: Theme) =>
   createStyles({
     mainPanel: {
-      position: 'fixed',
+      position: 'relative',
       transition: theme.transitions.create([
         'all 0.33s cubic-bezier(0.685, 0.0473, 0.346, 1)',
       ]),
