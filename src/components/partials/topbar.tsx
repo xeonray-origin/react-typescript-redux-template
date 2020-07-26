@@ -26,7 +26,11 @@ const Topbar = (props: ITopbarProps) => {
         <div className={classes.grow} />
         <div className={classes.menu}>
           {NavigationMenuItems.map(item => (
-            <Link key={item} className={classes.menuLink} href={'/' + item}>
+            <Link
+              key={item}
+              className={classes.menuLink}
+              href={item === 'Dashboard' ? '/' + item : 'Home#' + item}
+            >
               {item}
             </Link>
           ))}

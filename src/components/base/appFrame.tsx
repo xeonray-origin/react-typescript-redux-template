@@ -1,13 +1,15 @@
-import React from 'react';
+import React, { useMemo } from 'react';
 import { BrowserRouter as Router } from 'react-router-dom';
 import { Topnavigation } from '@components/partials';
-import routes from '@routes';
+import PageRoutes from '@routes';
 
 export default () => {
+  const topbar = useMemo(() => <Topnavigation />, []);
+
   return (
     <>
-      <Topnavigation />
-      <Router>{routes}</Router>
+      {topbar}
+      <Router>{PageRoutes}</Router>
     </>
   );
 };

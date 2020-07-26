@@ -38,10 +38,7 @@ const Page = (props: IPageProps) => {
   return (
     <>
       <div className={classes.mainPanel}>
-        <div className={classes.content}>
-          <Typography>asdasd</Typography>
-          {children}
-        </div>
+        <div className={classes.content}>{children}</div>
       </div>
     </>
   );
