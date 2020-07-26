@@ -7,9 +7,9 @@ export const resources = constants;
 
 export const NavigationMenuItems: Array<string> = [
   'Home',
-  'Research',
-  'Projects',
-  'Login',
+  'Products',
+  'Blogs',
+  'Dashboard',
 ];
 
 export const theme: Theme = createMuiTheme({
@@ -30,6 +30,16 @@ export const theme: Theme = createMuiTheme({
     background: {
       default: '#e1e1e1',
       paper: '#f1f1f2',
+    },
+  },
+  overrides: {
+    MuiCssBaseline: {
+      '@global': {
+        html: {
+          WebkitFontSmoothing: 'auto',
+          scrollBehavior: 'smooth',
+        },
+      },
     },
   },
   shadows: [

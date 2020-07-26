@@ -1,6 +1,6 @@
 import React from 'react';
 import ReactDOM from 'react-dom';
-import { ThemeProvider, Typography } from '@material-ui/core';
+import { ThemeProvider, Typography, CssBaseline } from '@material-ui/core';
 import { theme } from '@config';
 import { AppFrame } from '@components/base';
 import { store } from '@store';
@@ -16,6 +16,7 @@ const App = connect(
 )(() => (
   <>
     <ThemeProvider theme={theme}>
+      <CssBaseline />
       <AppFrame />
     </ThemeProvider>
   </>
