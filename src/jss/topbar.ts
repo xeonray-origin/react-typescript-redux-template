@@ -3,7 +3,7 @@ import { Theme } from '@material-ui/core';
 export const topbarStyles = (theme: Theme) =>
   createStyles({
     topbarInit: {
-      minHeight: 140,
+      height: '8rem',
       width: '100%',
       backgroundColor: theme.palette.background.default,
     },

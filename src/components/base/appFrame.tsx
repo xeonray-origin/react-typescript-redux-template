@@ -9,7 +9,7 @@ export default () => {
   return (
     <>
       {topbar}
-      <Router>{PageRoutes}</Router>
+      <Router basename='/'>{PageRoutes}</Router>
     </>
   );
 };

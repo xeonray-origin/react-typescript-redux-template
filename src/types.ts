@@ -19,7 +19,3 @@ export interface ISectionConfig {
   type: 'ABOUT_US_SECTION' | 'HERO_SECTION';
   data: ISectionConfigData;
 }
-
-export interface ISectionProps {
-  cardConfig: Array<ISectionConfig>;
-}

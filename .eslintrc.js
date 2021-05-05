@@ -13,7 +13,7 @@ module.exports = {
     warnOnUnsupportedTypeScriptVersion: false,
   },
   plugins: [
-    '@typescript-eslint',
+    'react-app',
     'react',
     'react-hooks',
     'import',

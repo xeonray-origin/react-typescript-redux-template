@@ -1,15 +1,27 @@
 import { createMuiTheme, Theme, Link } from '@material-ui/core';
 import constants from './cosntants';
 
-export const AppLogo: string = '/static/icons/logo.png';
+export const AppLogo: string = './static/icons/logo.png';
 
 export const resources = constants;
 
-export const NavigationMenuItems: Array<string> = [
-  'Home',
-  'Products',
-  'Blogs',
-  'Dashboard',
+export const NavigationMenuItems: Array<{label:string, path:string}> = [
+  {
+    label: 'Home',
+    path:'/#/Home'
+  },
+  {
+    label: 'Products',
+    path:'/#/Products'
+  },
+  {
+    label: 'Blogs',
+    path:'/#/Blogs'
+  },
+  {
+    label: 'Dashboard',
+    path:'/#/Dashboard'
+  }
 ];
 
 export const theme: Theme = createMuiTheme({
@@ -28,7 +40,7 @@ export const theme: Theme = createMuiTheme({
       light: '#e6e6e6',
     },
     background: {
-      default: '#e1e1e1',
+      default: '#ffffff',
       paper: '#f1f1f2',
     },
   },

@@ -6,6 +6,7 @@ import {
   WithStyles,
   Link,
   Theme,
+  Typography,
 } from '@material-ui/core';
 import { connect } from 'react-redux';
 import { topbarStyles } from '@jss';
@@ -20,18 +21,20 @@ interface ITopbarProps extends WithStyles<typeof topbarStyles> {
 const Topbar = (props: ITopbarProps) => {
   const { classes } = props;
   return (
-    <AppBar position="static">
-      <Toolbar className={classes.topbarInit}>
+    <AppBar className={classes.topbarInit} position="static">
+      <Toolbar>
         <img className={classes.logoInit} src={AppLogo} alt="app-logo" />
         <div className={classes.grow} />
         <div className={classes.menu}>
           {NavigationMenuItems.map(item => (
             <Link
-              key={item}
+              key={item.label}
               className={classes.menuLink}
-              href={item === 'Dashboard' ? '/' + item : 'Home#' + item}
+              href={item.path}
             >
-              {item}
+              <Typography variant="caption">
+                {item.label}
+              </Typography>
             </Link>
           ))}
         </div>
