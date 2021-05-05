@@ -3,9 +3,13 @@
   "version": "1.0.0",
   "description": "Template for React with typescript and redux. The UI in use is Material-UI for react and the app is bundled with Webpack.",
   "main": "index.tsx",
+  "repository": "https://github.com/xeonray-origin/react-typescript-redux-template.git",
+  "homepage": "http://gitname.github.io/react-typescript-redux-template",
   "scripts": {
     "start": "webpack-dev-server --config=webpack.dev.js --progress --inline",
-    "build": "webpack --config=webpack.prod.js --progress --inline --colors"
+    "build": "webpack --config=webpack.prod.js --progress --inline --colors",
+    "predeploy": "npm run build",
+    "deploy": "gh-pages -d build"
   },
   "author": "Amritendu Bhattacharjee",
   "license": "MIT",
